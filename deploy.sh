@@ -1,6 +1,6 @@
-docker build -t idjikine/multi-client:latest -t idjikine/multi-client:$SHA -f .client/Dockerfile ./client
-docker build -t idjikine/multi-server:latest -t idjikine/multi-server:$SHA -f .server/Dockerfile ./server
-docker build -t idjikine/multi-worker:latest -t idjikine/multi-worker:$SHA -f .worker/Dockerfile ./worker
+docker build -t idjikine/multi-client:latest -t idjikine/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t idjikine/multi-server:latest -t idjikine/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t idjikine/multi-worker:latest -t idjikine/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push idjikine/multi-client:latest
 docker push idjikine/multi-server:latest
