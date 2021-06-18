@@ -11,9 +11,9 @@ metadata:
 spec:
   tls:
     - hosts:
-      - niisseo.com
-      - www.niisseo.com
-    secretName: niisseo-com
+        - niisseo.com
+        - www.niisseo.com
+      secretName: niisseo-com
   rules:
     - host: niisseo.com
       http:
